@@ -1,75 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
-    }
+body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+}
 
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #1f2937;
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    margin-bottom: 15px;
+}
+
+nav a {
+    color: #60a5fa;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    color: #2563eb;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #dbeafe;
+    padding-bottom: 8px;
+}
+
+article h3 {
+    margin-bottom: 5px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+section a {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
     body {
-        background-color: #f4f4f4;
-        padding: 40px;
-        color: #333;
+        padding: 15px;
     }
 
-    .container {
-        max-width: 900px;
-        margin: auto;
-        background: white;
-        padding: 40px;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    header h1 {
+        font-size: 2rem;
     }
-
-    h1 {
-        color: #2c3e50;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    h2 {
-        color: #34495e;
-        border-bottom: 2px solid #3498db;
-        padding-bottom: 5px;
-        margin-top: 25px;
-        margin-bottom: 15px;
-    }
-
-    p {
-        line-height: 1.6;
-        margin-bottom: 10px;
-    }
-
-    ul {
-        margin-left: 20px;
-        line-height: 1.8;
-    }
-
-    li {
-        margin-bottom: 5px;
-    }
-
-    a {
-        text-decoration: none;
-        color: #3498db;
-        font-weight: bold;
-    }
-
-    a:hover {
-        color: #21618c;
-    }
-
-    hr {
-        display: none;
-    }
-
-    .header {
-        text-align: center;
-        margin-bottom: 25px;
-    }
-
-    .contact {
-        color: #666;
-        margin-top: 5px;
-    }
-
+}
